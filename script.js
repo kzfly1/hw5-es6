@@ -47,10 +47,8 @@ console.log(calculateArea(5, 10));
 
 //作业6. Rest/Spread 运算符
 //任务: 使用 Rest 运算符创建一个函数，能够将任意数量的参数相加。然后使用 Spread 运算符合并两个数组。
-function sum(...numbers) {
-  return numbers.reduce((acc, num) => acc + num, 0);
-}
-console.log(sum(1, 2, 3, 4)); // 10
+const sum = (...numbers) => numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum(1, 2, 3, 4));
 
 let arr1 = [1, 2];
 let arr2 = [3, 4];
