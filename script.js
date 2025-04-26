@@ -14,9 +14,6 @@ const add = (a, b) => a + b;
 箭头函数如何与常规函数不同地处理this：
   常规函数：this的值在函数调用时确定，可能会改变。（看调用）
   箭头函数：this的值在定义时确定，保持不变。 （看定义环境）
-  比如这里，箭头函数的this在出生的时候就已经确定了全局作用域是他的妈妈，谁调用它都不会便。在add箭头函数中，可以试一下console.log(this)，结果显而易见，它的this就是window对象。在严格模式下 （'use strict' 或 node.js中），this是undefined。
-
-  值得一提的一点，箭头函数的this有lexical scoping。对于对象包函数包箭头包（大肠包小肠）的迷惑情况下，区分好this被谁定义，被谁调用就行。
 */
 
 //Template Literals
